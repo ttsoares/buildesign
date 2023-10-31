@@ -52,7 +52,7 @@ const DATA = [
       "São softwares usados no ramo do design. O Figma roda no Windows e no Linux. O Sketch roda no IOS da Apple. São instrumentos para auxiliar no processo criativo e que facilitam a tarefa dos programadores em transformar o projeto em código que renderize a UI.",
   },
   {
-    pergunta: "O que uma 'Landing Page' ?",
+    pergunta: "O que é uma 'Landing Page' ?",
     resposta:
       "É uma única página que apresenta um produto ou serviço e mostra suas vantages e qualidades. O objetivo é atingir o que se define como 'conversão'. O termo conversão se refere a convencer a pessoa a aceitar a proposta mostrada na página que pode ser uma compra, assinar um serviço, etc... ",
   },
