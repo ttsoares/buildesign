@@ -57,6 +57,11 @@ const DATA = [
       "É uma única página que apresenta um produto ou serviço e mostra suas vantages e qualidades. O objetivo é atingir o que se define como 'conversão'. O termo conversão se refere a convencer a pessoa a aceitar a proposta mostrada na página que pode ser uma compra, assinar um serviço, etc... ",
   },
   {
+    pergunta: "O que significa SEO ?",
+    resposta:
+      "Sigla em Inglês para Search Engine Optimization. É uma estratégia para chamar a atenção dos buscadores, especialmente o Google, para que a avaliação da página ganhe uma melhor pontuação e assim suba na lista apresentada nas pesquisas dos usuários.",
+  },
+  {
     pergunta: "Onde fica nossa sede ?",
     resposta:
       "Sapiranga, Rio Grande do Sul, Brasil. Distante 85 Km de Porto Alegre, a capital do estado.",
@@ -85,7 +90,7 @@ const DATA = [
 
 const Page = () => {
   return (
-    <div className="my-4 border-t w-[70%] mx-auto h-fit md:h-screen">
+    <div className="my-4 border-t w-[70%] mx-auto h-fit ">
       <h1 className="w-fit mx-auto text-2xl font-bold my-5 border-2 rounded-lg px-8 py-4 ">
         Perguntas frequentes e respostas
       </h1>
