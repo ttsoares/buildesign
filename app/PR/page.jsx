@@ -69,7 +69,7 @@ const DATA = [
   {
     pergunta: "O que significa UI ?",
     resposta:
-      "É a singla em Inglês para 'User Interface' cuja tradição é 'Interface do Usuário'. É o que o usuário encherga na tela do dispositivo. É o conjunto dos elementos visuais com os quais a pessoa interage.",
+      "É a singla em Inglês para 'User Interface' cuja tradução é 'Interface do Usuário'. É o que o usuário encherga na tela do dispositivo. É o conjunto dos elementos visuais com os quais a pessoa interage.",
   },
   {
     pergunta: "E sobre UX ?",
@@ -85,7 +85,7 @@ const DATA = [
 
 const Page = () => {
   return (
-    <div className="my-4 border-t w-[70%] mx-auto h-screen">
+    <div className="my-4 border-t w-[70%] mx-auto h-fit md:h-screen">
       <h1 className="w-fit mx-auto text-2xl font-bold my-5 border-2 rounded-lg px-8 py-4 ">
         Perguntas frequentes e respostas
       </h1>
