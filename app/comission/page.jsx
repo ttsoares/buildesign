@@ -107,7 +107,7 @@ const Page = () => {
               }`}
               onClick={() => pontoPartida(0)}
             >
-              Tenho o desing
+              Tenho o design
             </button>
             <button
               className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
