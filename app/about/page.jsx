@@ -21,9 +21,9 @@ function tick() {
 
 const Pahe = () => {
   return (
-    <section className="w-full h-fit md:h-screen ">
+    <section className="w-full flex flex-col h-fit">
       <h1 className="text-4xl mt-2 w-fit mx-auto mb-1">Nosso time:</h1>
-      <div className="w-3/4 grid grid-cols-2 mx-auto text-md">
+      <div className="w-3/4 grid grid-cols-1  md:grid-cols-2 mx-auto">
         <div className="w-full bg-gradient-to-l from-slate-200 via-slate-400  to-slate-300 text-right pr-2">
           <div className="w-full">
             <h2 className="font-semibold text-lg">Thomas</h2>
@@ -54,15 +54,15 @@ const Pahe = () => {
       <h1 className="text-4xl mt-2 w-fit mx-auto mb-1">
         Nosso <span className="for-font-extrabold">foco</span>:
       </h1>
-      <div className="w-3/4 grid grid-cols-3 mx-auto text-center">
+      <div className="w-[85%] grid grid-cols-1 md:grid-cols-3 mx-auto text-center">
         <div className="">
           <h2 className="text-2xl font-bold">Velocidade</h2>
-          <p className="text-xl">(redes móveis)</p>
+          <p className="text-md">(redes móveis)</p>
           <p className="font-normal text-left w-2/3 mx-auto">
             Sabemos que a maioria dos acessos partem de dispositivos móveis. Por
             isso nossa enfatizamos performance para uma melhor experiência.
           </p>
-          <div className="mt-3 w-2/3 mx-auto">
+          <div className="mt-3 w-2/3 mx-auto text-xs">
             <div className="flex items-center justify-start">
               {tick()}
               <p>Maior velocidade no download</p>
@@ -80,13 +80,13 @@ const Pahe = () => {
 
         <div>
           <h2 className="text-2xl font-bold">SEO</h2>
-          <p className="text-xl">(otimizando buscadores)</p>
+          <p className="text-md">(otimizando buscadores)</p>
           <p className="font-normal text-left w-2/3 mx-auto">
             Uma boa SEO é essencial pois significa uma maior visibilidade para a
             sua marca através do crescimento orgânico dos acessos ao seu
             conteúdo - melhorando sua presença digital.
           </p>
-          <div className="mt-3 w-2/3 mx-auto">
+          <div className="mt-3 w-2/3 mx-auto text-xs">
             <div className="flex items-center justify-start">
               {tick()}
               <p>Aumentando o tráfego orgânico</p>
@@ -104,15 +104,15 @@ const Pahe = () => {
 
         <div>
           <h2 className="text-2xl font-bold">Estética</h2>
-          <p className="text-xl">(coerência visual)</p>
+          <p className="text-md">(coerência visual)</p>
           <p className="font-normal text-left w-2/3 mx-auto">
             Nossa abordagem busca a imersão do visitante no contexto da sua
             marca, encorajando uma conexão mais profunda com seu público.
           </p>
-          <div className="mt-3 w-2/3 mx-auto">
+          <div className="mt-3 w-2/3 mx-auto text-xs">
             <div className="flex items-center justify-start">
               {tick()}
-              <p>Crescendo a fidelidade dos clientes</p>
+              <p>Maior fidelidade dos clientes</p>
             </div>
             <div className="flex items-center justify-start">
               {tick()}
