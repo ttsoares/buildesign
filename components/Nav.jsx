@@ -44,7 +44,7 @@ const Nav = () => {
   }
 
   return (
-    <nav className="relative w-full bg-gradient-to-r from-slate-600 to-slate-200">
+    <nav className="relative w-full bg-gradient-to-r from-[#494949] to-[#dcdcdc]">
       {/* SM */}
       <div className="w-full h-12 p-2 md:hidden">
         <div className="flex justify-between">

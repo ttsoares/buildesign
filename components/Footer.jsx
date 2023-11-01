@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-gradient-to-r from-slate-600 to-slate-200 ">
+    <div className="w-full bg-gradient-to-r from-[#494949] to-[#dcdcdc] ">
       <div className="max-w-7xl h-14 flex flex-col md:flex-row items-center justify-between mx-auto">
         <Link
           href="/figma"
