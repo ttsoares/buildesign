@@ -14,9 +14,9 @@ export default function Home() {
         />
       </div>
 
-      <div className="absolute top-20 left-0 w-full hidden md:block h-[calc(100%-12%)] bg-gradient-to-b from-white to-black mix-blend-multiply"></div>
+      <div className="absolute top-14 left-0 w-full hidden md:block h-[calc(100%-12%)] bg-gradient-to-b from-gray-200 to-black mix-blend-multiply"></div>
 
-      <div className="absolute top-1/3 left-[5%]">
+      <div className="absolute top-1/3 text-white left-[5%]">
         <h1 className="text-2xl md:text-4xl lg:text-6xl italic font-extrabold">
           A estética da sua marca atraindo clientes...
         </h1>
