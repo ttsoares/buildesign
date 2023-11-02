@@ -96,30 +96,38 @@ const Page = () => {
   }
 
   return (
-    <section className="w-full h-fit">
+    <section className="w-full min-h-screen">
       <div className="flex flex-col items-center justify-center mb-5">
         <div className="flex flex-col items-center justify-center mb-5">
-          <h1 className="font-bold text-lg p-2">Ponto de partida</h1>
+          <h1 className="font-bold text-lg p-2 highlight highlight-blue-400 highlight-variant-8">
+            Ponto de partida
+          </h1>
+          <p className="font-thin text-xs text-center -mt-2 mb-3">
+            (escolha uma das opções){" "}
+          </p>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 justify-between items-center">
             <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                partida === 0 && "bg-slate-400"
+              className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                partida === 0 &&
+                "highlight highlight-blue-300 highlight-variant-4"
               }`}
               onClick={() => pontoPartida(0)}
             >
               Tenho o design
             </button>
             <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                partida === 1 && "bg-slate-400"
+              className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                partida === 1 &&
+                "highlight highlight-blue-300 highlight-variant-4"
               }`}
               onClick={() => pontoPartida(1)}
             >
               Partir do zero
             </button>
             <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                partida === 2 && "bg-slate-400"
+              className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                partida === 2 &&
+                "highlight highlight-blue-300 highlight-variant-4"
               }`}
               onClick={() => pontoPartida(2)}
             >
@@ -127,130 +135,170 @@ const Page = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center mb-5">
-          <h1 className="font-bold text-lg p-2">Tipo de página</h1>
-          <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between items-center">
-            <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                tipoPagina === 0 && "bg-slate-400"
-              }`}
-              onClick={() => tipoDePagina(0)}
-            >
-              Landing Page
-            </button>
-            <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                tipoPagina === 1 && "bg-slate-400"
-              }`}
-              onClick={() => tipoDePagina(1)}
-            >
-              Pessoal/Porfólio
-            </button>
-            <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                tipoPagina === 2 && "bg-slate-400"
-              }`}
-              onClick={() => tipoDePagina(2)}
-            >
-              Institucional
-            </button>
+        {partida !== 3 && (
+          <div className="flex flex-col items-center justify-center mb-5">
+            <h1 className="font-bold text-lg p-2 highlight highlight-blue-400 highlight-variant-8 mb-3">
+              Tipo de página
+            </h1>
+            <p className="font-thin text-xs text-center -mt-5 mb-3">
+              (já sabe o contexto ?)
+            </p>
+            <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between items-center">
+              <button
+                className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                  tipoPagina === 0 &&
+                  "highlight highlight-blue-300 highlight-variant-4"
+                }`}
+                onClick={() => tipoDePagina(0)}
+              >
+                Landing Page
+              </button>
+              <button
+                className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                  tipoPagina === 1 &&
+                  "highlight highlight-blue-300 highlight-variant-4"
+                }`}
+                onClick={() => tipoDePagina(1)}
+              >
+                Pessoal/Porfólio
+              </button>
+              <button
+                className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                  tipoPagina === 2 &&
+                  "highlight highlight-blue-300 highlight-variant-4"
+                }`}
+                onClick={() => tipoDePagina(2)}
+              >
+                Institucional
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col items-center justify-center mb-5">
-          <h1 className="font-bold text-lg p-2">Precisa CMS ?</h1>
-          <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between items-center">
-            <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                comCMS === 0 && "bg-slate-400"
-              }`}
-              onClick={() => querCMS(0)}
-            >
-              Sim
-            </button>
-            <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                comCMS === 1 && "bg-slate-400"
-              }`}
-              onClick={() => querCMS(1)}
-            >
-              Não
-            </button>
-            <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                comCMS === 2 && "bg-slate-400"
-              }`}
-              onClick={() => querCMS(2)}
-            >
-              Não sei
-            </button>
+        )}
+        {tipoPagina !== 3 && (
+          <div className="flex flex-col items-center justify-center mb-5">
+            <h1 className="font-bold text-lg p-2 highlight highlight-blue-400 highlight-variant-8 mb-3">
+              Precisa CMS ?
+            </h1>
+            <p className="font-thin text-xs text-center -mt-5 mb-3">
+              (sistema gestor de conteúdo)
+            </p>
+            <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between items-center">
+              <button
+                className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                  comCMS === 0 &&
+                  "highlight highlight-blue-300 highlight-variant-4"
+                }`}
+                onClick={() => querCMS(0)}
+              >
+                Sim
+              </button>
+              <button
+                className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                  comCMS === 1 &&
+                  "highlight highlight-blue-300 highlight-variant-4"
+                }`}
+                onClick={() => querCMS(1)}
+              >
+                Não
+              </button>
+              <button
+                className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                  comCMS === 2 &&
+                  "highlight highlight-blue-300 highlight-variant-4"
+                }`}
+                onClick={() => querCMS(2)}
+              >
+                Não sei
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col items-center justify-center mb-5">
-          <h1 className="font-bold text-lg p-2">Cronograma</h1>
-          <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between items-center">
-            <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                periodo === 0 && "bg-slate-400"
-              }`}
-              onClick={() => cronograma(0)}
-            >
-              Menos de três semanas
-            </button>
-            <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                periodo === 1 && "bg-slate-400"
-              }`}
-              onClick={() => cronograma(1)}
-            >
-              Entre três e seis semanas
-            </button>
-            <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                periodo === 2 && "bg-slate-400"
-              }`}
-              onClick={() => cronograma(2)}
-            >
-              Mais de seis semanas
-            </button>
+        )}
+        {comCMS !== 3 && (
+          <div className="flex flex-col items-center justify-center mb-5">
+            <h1 className="font-bold text-lg p-2 highlight highlight-blue-400 highlight-variant-8 mb-3">
+              Cronograma
+            </h1>
+            <p className="font-thin text-xs text-center -mt-5 mb-3">
+              (de quanto tempo dipomos)
+            </p>
+            <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between items-center">
+              <button
+                className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                  periodo === 0 &&
+                  "highlight highlight-blue-300 highlight-variant-4"
+                }`}
+                onClick={() => cronograma(0)}
+              >
+                Menos de três semanas
+              </button>
+              <button
+                className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                  periodo === 1 &&
+                  "highlight highlight-blue-300 highlight-variant-4"
+                }`}
+                onClick={() => cronograma(1)}
+              >
+                Entre três e seis semanas
+              </button>
+              <button
+                className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                  periodo === 2 &&
+                  "highlight highlight-blue-300 highlight-variant-4"
+                }`}
+                onClick={() => cronograma(2)}
+              >
+                Mais de seis semanas
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col items-center justify-center mb-5">
-          <h1 className="font-bold text-lg p-2">Orçamento</h1>
-          <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between items-center">
-            <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                orcamento === 0 && "bg-slate-400"
-              }`}
-              onClick={() => tamanhoOcamento(0)}
-            >
-              Menos de R$1000
-            </button>
-            <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                orcamento === 1 && "bg-slate-400"
-              }`}
-              onClick={() => tamanhoOcamento(1)}
-            >
-              Entre R$1000 e R$3000
-            </button>
-            <button
-              className={`px-4 py-1 mx-5 border-2 border-blue-400 transition-all duration-300 hover:scale-125 ${
-                orcamento === 2 && "bg-slate-400"
-              }`}
-              onClick={() => tamanhoOcamento(2)}
-            >
-              Mais de R$3000
-            </button>
+        )}
+        {periodo !== 3 && (
+          <div className="flex flex-col items-center justify-center mb-5">
+            <h1 className="font-bold text-lg p-2 highlight highlight-blue-400 highlight-variant-8 mb-3">
+              Orçamento
+            </h1>
+            <p className="font-thin text-xs text-center -mt-5 mb-3">
+              (apenas uma referência)
+            </p>
+            <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between items-center">
+              <button
+                className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                  orcamento === 0 &&
+                  "highlight highlight-blue-300 highlight-variant-4"
+                }`}
+                onClick={() => tamanhoOcamento(0)}
+              >
+                Menos de R$1000
+              </button>
+              <button
+                className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                  orcamento === 1 &&
+                  "highlight highlight-blue-300 highlight-variant-4"
+                }`}
+                onClick={() => tamanhoOcamento(1)}
+              >
+                Entre R$1000 e R$3000
+              </button>
+              <button
+                className={`px-4 py-1 mx-5 border-2 rounded-md  border-blue-400 transition-all duration-300 hover:scale-125 ${
+                  orcamento === 2 &&
+                  "highlight highlight-blue-300 highlight-variant-4"
+                }`}
+                onClick={() => tamanhoOcamento(2)}
+              >
+                Mais de R$3000
+              </button>
+            </div>
           </div>
-        </div>
+        )}
       </div>
-      <ContactForm submit={submit} />
-      <div className="mt-10 mx-auto bg-gray-600 px-5 py-2 rounded-xl text-white text-sm flex w-fit mb-5 border-2 border-blue-400">
-        <p>Ficou com dúvidas? No menu</p>
+      {orcamento !== 3 && <ContactForm submit={submit} />}
+      <div className="mt-10 mx-auto bg-gray-600 px-5 py-2 text-white text-sm flex w-fit mb-5 border-2 rounded-md  border-blue-400">
+        <p>Ficou com dúvidas? &nbsp; &nbsp; No menu, a opção</p>
         <Link className="mx-2 font-bold text-yellow-300" href="/PR">
           &apos;P&R&apos;
         </Link>
-        <p>pode lhe ajudar.</p>
+        <p>pode ajudar...</p>
       </div>
     </section>
   );
