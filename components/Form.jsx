@@ -34,7 +34,8 @@ function ContactForm({ submit }) {
           <div className="shadow-md shadow-indigo-600/50 p-3 border-2 bg-slate-400 border-black rounded-lg transition-all duration-300 hover:scale-110 flex flex-col md:flex-row shrink">
             <label htmlFor="firstName">Nome:</label>
             <input
-              className="shrink flex-1 rounded-md ml-2"
+              placeholder="Campo necessário"
+              className="shrink flex-1 rounded-md ml-2 placeholder-shown:font-bold placeholder:text-red-500/50"
               type="text"
               id="firstName"
               {...register("firstName", {
@@ -50,6 +51,7 @@ function ContactForm({ submit }) {
           <div className="shadow-md shadow-indigo-600/50 p-3 border-2 bg-slate-400 border-black rounded-lg transition-all duration-300 hover:scale-110 flex flex-col md:flex-row shrink">
             <label htmlFor="lastName">Empresa:</label>
             <input
+              placeholder="Campo opcional"
               type="text"
               className="shrink flex-1 rounded-md ml-2"
               id="lastName"
@@ -62,7 +64,8 @@ function ContactForm({ submit }) {
           <div className="shadow-md shadow-indigo-600/50 p-3 border-2 bg-slate-400 border-black rounded-lg transition-all duration-300 hover:scale-110 flex flex-col md:flex-row shrink">
             <label htmlFor="email">Email:</label>
             <input
-              className="shrink flex-1 rounded-md ml-2"
+              placeholder="Campo necessário"
+              className="shrink flex-1 rounded-md ml-2 placeholder-shown:font-bold placeholder:text-red-500/50"
               type="email"
               id="email"
               {...register("email", {
@@ -79,6 +82,7 @@ function ContactForm({ submit }) {
           <div className="shadow-md shadow-indigo-600/50 p-3 border-2 bg-slate-400 border-black rounded-lg transition-all duration-300 hover:scale-110 flex flex-col md:flex-row shrink">
             <label htmlFor="phoneNumber">Telefone:</label>
             <input
+              placeholder="Campo opcional"
               className="shrink flex-1 rounded-md ml-2"
               type="tel"
               id="phoneNumber"
@@ -91,6 +95,7 @@ function ContactForm({ submit }) {
           <div className="flex justify-center items-center shadow-md shadow-indigo-600/50 p-3 border-2 bg-slate-400 border-black rounded-lg transition-all duration-300 hover:scale-110 flex-col md:flex-row shrink">
             <label htmlFor="message">Menssagem:</label>
             <textarea
+              placeholder="Campo opcional"
               id="message"
               name="message"
               {...register("message")}
