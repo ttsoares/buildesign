@@ -219,7 +219,7 @@ const Page = () => {
               Cronograma
             </h1>
             <p className="font-thin text-xs text-center -mt-5 mb-3">
-              (de quanto tempo dipomos)
+              (de quanto tempo dispomos)
             </p>
             <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between items-center">
               <button
@@ -258,7 +258,7 @@ const Page = () => {
               Orçamento
             </h1>
             <p className="font-thin text-xs text-center -mt-5 mb-3">
-              (apenas uma referência)
+              (apenas como referência)
             </p>
             <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between items-center">
               <button
@@ -292,10 +292,14 @@ const Page = () => {
           </div>
         )}
       </div>
-      {orcamento !== 3 && <ContactForm submit={submit} />}
+      {orcamento !== 3 && <ContactForm message={false} submit={submit} />}
       <div className="mt-10 mx-auto bg-gray-600 px-5 py-2 text-white text-sm flex w-fit mb-5 border-2 rounded-md  border-blue-400">
         <p>Ficou com dúvidas? &nbsp; &nbsp; No menu, a opção</p>
-        <Link className="mx-2 font-bold text-yellow-300" href="/PR">
+        <Link
+          className="mx-2 font-bold text-yellow-300"
+          href="/PR"
+          target="_blank"
+        >
           &apos;P&R&apos;
         </Link>
         <p>pode ajudar...</p>

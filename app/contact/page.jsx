@@ -45,7 +45,7 @@ const Page = () => {
 
   return (
     <section className="w-full h-screen">
-      <ContactForm submit={submit} />
+      <ContactForm message={true} submit={submit} />
     </section>
   );
 };
