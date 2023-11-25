@@ -44,7 +44,10 @@ const Page = () => {
   }
 
   return (
-    <section className="w-full h-screen">
+    <section className="w-full h-screen flex flex-col">
+      <h1 className="text-5xl font-bold self-center animate-pulse ">
+        Vamos conversar ?
+      </h1>
       <ContactForm message={true} submit={submit} />
     </section>
   );

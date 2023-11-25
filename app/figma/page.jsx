@@ -51,11 +51,11 @@ const STEPS = [
 const Page = () => {
   return (
     <div className="w-[80%] flex flex-col mx-auto">
-      <p className="mb-3 font-bold">
+      <h1 className="mb-3 font-bold text-xl">
         Traduzir um projeto no Figma para um código aceito pelo browser é como
         transformar os desenhos detalhados de um carro em um veículo real.
         Abaixo vemos uma versão simplificada de como isso funciona.
-      </p>
+      </h1>
       {STEPS.map((item, index) => (
         <div className="p-2 flex flex-col md:flex-row w-full" key={index}>
           <p className="w-full md:w-1/5 font-bold">{item.titulo}</p>

@@ -22,8 +22,8 @@ function ContactForm({ submit, message }) {
 
   return (
     <div className="flex flex-col justify-center items-center md:w-[80%] mx-auto">
-      <h2 className="mb-5 text-lg md:text-3xl form-font-bold">
-        Para que possamos responder seu contato:
+      <h2 className="mb-5 text-base form-font-bold">
+        (Prefere WhattsAPP? ☎️ 051 99256 7197)
       </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}

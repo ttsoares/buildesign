@@ -1,11 +1,12 @@
 import Nav from "@/components/Nav";
 
-import { Inter } from "next/font/google";
+import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
-const inter = Inter({
+const IBM = IBM_Plex_Mono({
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-screen w-screen relative overflow-x-hidden">
       <body
-        className={`${inter.className} bg-slate-300 h-[calc(100%-6%)] w-full`}
+        className={`${IBM.className} bg-slate-300 h-[calc(100%-6%)] w-full`}
       >
         <Nav />
         {children}
