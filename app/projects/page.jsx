@@ -4,14 +4,15 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <div className="w-full h-fit mb-20">
+    <div className="w-full min-h-screen">
       <h1 className="w-fit mx-auto text-2xl md:text-5xl">
         Projetos Figma traduzidos para React:
       </h1>
       <p className="text-sm w-fit mx-auto mb-12">
         (Clique na imagem para ver a página)
       </p>
-      <div className="columns-1 md:columns-2 items-center w-full gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-5">
+        {/*  */}
         <div className="flex flex-col justify-center items-center mb-10">
           <h2 className="w-fit mx-auto text-xl  pl-6 mb-5">
             Índice de Massa Corporal
@@ -62,6 +63,19 @@ const Page = () => {
               <Image
                 src="/images/galleria.webp"
                 alt="Art Gallery"
+                fill
+                className="rounded-xl"
+              />
+            </div>
+          </Link>
+        </div>
+        <div className="flex flex-col justify-center items-center mb-10">
+          <h2 className="w-fit mx-auto text-xl pl-6 mb-5">Arch Studio</h2>
+          <Link href="https://arch-studio-henna.vercel.app/" target="_blank">
+            <div className="relative ml-10 w-80 h-80 transition-all duration-500 hover:scale-110">
+              <Image
+                src="/images/arch_studio.webp"
+                alt="Arch Studio"
                 fill
                 className="rounded-xl"
               />
